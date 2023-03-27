@@ -5,11 +5,12 @@
             <th>nome</th>
             <th>idade</th>
         </tr>
-        {% for usuario in dict_usuarios %}
+        {% for usuario in usuarios %} 
+        #faz um loop dentro da chave usuarios do dicionario "dict_usuarios" na views.py dentro do app
         <tr>
-            <td>{{dict_usuarios.ID_usuario}}</td>
-            <td>{{dict_usuarios.nome_usuario}}</td>
-            <td>{{dict_usuarios.idade_usuario}}</td>
+            <td>{{usuario.ID_usuario}}</td>
+            <td>{{usuario.nome_usuario}}</td>
+            <td>{{usuario.idade_usuario}}</td>
         </tr>
         {% endfor %}
     </table>
