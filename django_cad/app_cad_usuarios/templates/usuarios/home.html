@@ -16,12 +16,16 @@
           <span class="navbar-brand mb-0 h1">Cadastrar</span>
         </div>
       </nav>
-      <div style="text-align: center" class="container">
-        <h1>Cadastro usuarios</h1>
-        Nome <input class="form-control-sm" type="text">
-        Idade <input class="form-control-sm" type="text">
-        <button class="form-control-sm" type="submit">Enviar</button>
-      </div>
+      <form action="{% url 'listagem_usuarios' %}" method="post">
+        {% csrf_token %}
+        <div style="text-align: center" class="container">
+          <h1>Cadastro usuarios</h1>
+          Nome <input name="name_user" class="form-control-sm" type="text">
+          Idade <input name="age_user"class="form-control-sm" type="text">
+          <button class="form-control-sm" type="submit">Enviar</button>
+        </div>
+      </form>
+      
 
     <!-- Optional JavaScript; choose one of the two! -->
 

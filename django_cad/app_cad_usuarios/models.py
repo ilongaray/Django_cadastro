@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+
+class Usuario(models.Model):
+    ID_usuario = models.AutoField(primary_key=True)
+    nome_usuario = models.TextField(max_length=255)
+    idade_usuario = models.IntegerField()

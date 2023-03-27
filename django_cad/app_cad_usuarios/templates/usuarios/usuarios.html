@@ -1,0 +1,16 @@
+<div calss="container">
+    <table>
+        <tr>
+            <th>id</th>
+            <th>nome</th>
+            <th>idade</th>
+        </tr>
+        {% for usuario in dict_usuarios %}
+        <tr>
+            <td>{{dict_usuarios.ID_usuario}}</td>
+            <td>{{dict_usuarios.nome_usuario}}</td>
+            <td>{{dict_usuarios.idade_usuario}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>

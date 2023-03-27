@@ -6,5 +6,6 @@ from django.urls import path
 #rota, view responsável, referencia
 #index vai vazio no path
 urlpatterns = [
-        path('', views.home, name='home')  # nome da guia: home
+        path('', views.home, name='home'),  # nome da guia: home
+        path('usuarios/', views.add_user, name='listagem_usuarios')
 ]
